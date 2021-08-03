@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../image/fp_background.jpg');
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+button:hover {
+    animation: bounce 1s;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('ProximaNova-Regular.woff') format('woff'), url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../css/ProximaNova-Bold.eot');
+    src: url('../css/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../css/ProximaNova-Bold.woff') format('woff'), url('../css/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../css/ProximaNova-Semibold.eot');
+    src: url('../css/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('../css/ProximaNova-Semibold.woff') format('woff'), url('../css/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header .container {
+    width: 1152px;
+    margin: 0 auto;
+    max-height: 135.5px;
+}
+
+header {
+    background: url('../image/header_background.jpg') center center/contain no-repeat;
+}
+
+.header_logo {
+    padding-top: 32px;
+    width: 576px;
+    display: inline-block;
+}
+
+.nav {
+    font-family: 'Proxima Nova Bold';
+    font-size: 14px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 572px;
+    list-style-type: none;
+    position: absolute;
+    top: 75px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav a:visited {
+    color: #ffffff;
+}
+
+.nav a:active {
+    color: #ffffff;
+}
+
+.nav a:hover {
+    border-bottom: 3px solid #ff8b00;
+    padding-bottom: 8px;
+}
+
+.device_aut {
+    height: 357px;
+}
+
+.device_aut .container {
+    width: 1600px;
+    height: 446px;
+    margin: 0 auto;
+    margin-top: 138px;
+}
+
+.device {
+    display: inline-block;
+    width: 926.533px;
+}
+
+.device_aut .device_header {
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+    font-size: 55px;
+    width: 622.53px;
+    margin-left: 304px;
+}
+
+.device_aut .device_text {
+    font-family: Proxima Nova Semibold;
+    color: #ffffff;
+    font-size: 16px;
+    width: 465.81px;
+    margin-left: 306px;
+    margin-top: 20px;
+    line-height:  30px;
+}
+
+.device_aut .device_btn {
+    width: 174px;
+    height: 53.46px;
+    border: 1px solid #ff8b00;
+    border-radius: 4px;
+    background-image: url(../icon/get_started.png);
+    font-size: 14px;
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+    margin-left: 305px;
+    margin-top: 54px;
+}
+
+.device_tw_logo {
+    background-image: url(../logo/twitter.png);
+    display: inline-block;
+    width: 149px;
+    height: 121px;
+    margin-bottom: 55px;
+    margin-left: 160px;
+}
+
+.polygon {
+    display: inline-block;
+    position: relative;
+    bottom: 85px;
+    margin-left: 243px;
+}
+
+.polygon ul {
+    list-style-type: none;
+}
+.polygon ul li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.find_out_more {
+    height: 231px;
+    text-align: center;
+}
+
+.find_more_text {
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+    font-size: 16.04px;
+    padding-top: 76px;
+    padding-bottom: 23px;
+}
+
+.subheader {
+    min-height: 383px;
+    padding-top: 145px;
+}
+
+.subheader .container {
+    display: flex;
+    justify-content: space-around;
+    width: 1152px;
+    margin: auto;
+    text-align: center;
+}
+
+.subheader .subheader_text {
+    font-family: Proxima Nova Bold;
+    color: #7050e5;
+}
+
+.subheader h2 {
+    font-size: 60.08px;
+}
+
+.subheader p {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height:  20px;
+}
+
+.what_we_do {
+    background: url('../image/what_we_do_background.jpg') center center/contain no-repeat;
+    min-height: 1225px;
+}
+
+.what_we_do .container {
+    display: flex;
+    margin: 0 auto;
+    width: 950px;
+    min-height: 874px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.what_we_do .wwd_title {
+    text-align: right;
+    max-width: 1152px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+}
+
+.wwd_title img {
+    padding-right: 73px;
+    padding-top: 120px;
+}
+
+.what_we_do .wwd_item {
+    width: 295px;
+    text-align: center;
+}
+
+.what_we_do .wwd_item h2 {
+    font-family: Proxima Nova Bold;
+    color: #7050e5;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 9px;
+    line-height:  20px;
+}
+
+.what_we_do .wwd_item .wwd_descrip {
+    font-family: Proxima Nova Regular;
+    color: #878787;
+    font-size: 15.02px;
+    text-align: left;
+    line-height:  22px;
+}
+
+.what_we_do .wwd_item .wwd_item_img {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.product_spotlight .container {
+    margin: 0 auto;
+    width: 1600px;
+    height: 573px;
+    margin-top: 28px;
+    margin-bottom: 77px;
+}
+
+.product_spotlight .container .spotlight_text {
+    display: inline-block;
+    width: 735px;
+    margin-top: 186px;
+    padding-left: 162px;
+}
+
+.product_spotlight .container .spotlight_text h1 {
+    font-family: Proxima Nova Bold;
+    color: #7050e5;
+    font-size: 40px;
+    margin-bottom: 26px;
+}
+
+.product_spotlight .container .spotlight_text p {
+    font-family: Proxima Nova Regular;
+    color: #878787;
+    font-size: 15px;
+    margin-bottom: 35px;
+    line-height:  22px;
+}
+
+.product_spotlight .container .product_spotlight_btn {
+    width: 174px;
+    height: 53.46px;
+    border: 1px solid #ff8b00;
+    border-radius: 4px;
+    background-image: url(../icon/get_started.png);
+    font-size: 14px;
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+}
+
+.product_spotlight .container .spotlight_video {
+    display: inline-block;
+    position: relative;
+    height: 452px;
+    width: 724px;
+    background: url(../icon/FEATURE\ VIDEO.jpg);
+    bottom: 200px;
+    text-align: center;
+}
+
+.popup {
+    position: relative;
+    top: 165px;
+}
+
+.b-container {
+    width: 200px;
+    height: 150px;
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.b-popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+
+.b-popup .b-popup-content {
+    margin: 40px auto 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta_banner {
+    min-height: 218px;
+    background: url(../image/banner_background.jpg) center center/contain no-repeat;
+}
+
+.cta_banner .container {
+    min-height: 218px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.cta_banner .container .banner {
+    min-height: 218px;
+    display: flex;
+    justify-content: space-around;
+    width: 1152px;
+    margin: auto;
+    align-items: center;
+}
+
+.cta_banner .container .banner_text {
+    width: 576px;
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.cta_banner .container .banner_btn {
+    width: 576px;
+    text-align: right;
+}
+
+.cta_banner .container .banner_btn {
+    width: 576px;
+    text-align: right;
+}
+
+.cta_banner .container .banner_btn button {
+    width: 576px;
+    text-align: right;
+    width: 174px;
+    height: 53.46px;
+    border: 1px solid #ff8b00;
+    border-radius: 4px;
+    background-image: url(../icon/get_started.png);
+    font-size: 14px;
+    font-family: Proxima Nova Bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer {
+    min-height: 401px;
+    background: url(../image/footer_background.jpg) center center/contain no-repeat;
+}
+
+.footer .container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.footer .container .footer_content {
+    display: flex;
+    max-width:  1376px;
+    min-height: 401px;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-top: 57px;
+}
+.footer .container .footer_content .footer_table ul {
+    list-style-type: none;
+    padding-left: 0%;
+    margin-top: 13px;
+}
+.footer .container .footer_content .footer_table a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Proxima Nova Regular;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer .container .footer_content a:hover {
+    color: #ff8b00;
+}
+.footer .container .footer_content .footer_table p {
+    display: inline;
+    font-family: Proxima Nova Bold;
+    font-size: 14px;
+    color: #ff8b00;
+
+}
+
+.footer .container .footer_content .footer_logo {
+    margin-top: auto;
+    padding-right: 33px;
+    padding-bottom: 28px;
+}
+.copyright_bar {
+    min-height: 31px;
+    background: url(../image/copyright_background.jpg) center center/contain no-repeat;
+}
+.copyright_bar .container {
+    display: flex;
+    justify-content: center;
+    min-height: 31px;
+    min-width: 631px;
+    margin: auto;
+    align-items: center;
+    
+    
+}
+.copyright_bar .container .copyright_text {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 10px;
+    color: #9b9b9b;
+   
+   
+    
+}

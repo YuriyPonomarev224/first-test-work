@@ -98,10 +98,8 @@ header {
 }
 
 .menu .menu_item {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova Bold;
   font-size: 14px;
-  line-height: 38px;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #ffffff;
